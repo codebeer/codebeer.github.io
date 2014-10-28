@@ -1,0 +1,1 @@
+openssl enc -aes-256-cbc -a -salt -in details.md -out details

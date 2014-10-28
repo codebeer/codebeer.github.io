@@ -11,6 +11,8 @@ github_username:  codebeer
 # Build settings
 markdown: kramdown
 
+exclude: [exclude]
+
 # Custom Stuff
 emails:
   - brad@bradleycurran.com
