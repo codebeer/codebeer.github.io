@@ -1,12 +1,11 @@
 # Site settings
-title: codebeer
+title: The Formal Friday Club
 description: > #
-  Why is this called codebeer you may ask?<br/>
-  Well, we code and we like beer. 
+  
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://codebeer.github.io" # the base hostname & protocol for your site
+url: "http://formalfriday.club" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-github_username:  codebeer
+#github_username: codebeer
 
 # Build settings
 markdown: kramdown
@@ -16,3 +15,4 @@ exclude: [exclude]
 # Custom Stuff
 emails:
   - brad@bradleycurran.com
+  - hi@mattwitherow.com
