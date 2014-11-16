@@ -11,20 +11,160 @@ $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     20px;
 
-$text-color:       #111;
+$text-color:       #333;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #6E02AA;
+
+$hover-color:	   #9709E5;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  darken($grey-color, 15%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+//matt start
 
+h1,  h3, h4, h5 {
+	font-family: "proxima-nova", "Helvetica Neue", Avenir, Arial, sans-serif;
+	color: $grey-color-dark;
+}
+
+h2 {
+	font-family: "Lato";
+	font-weight: bold;
+}
+#greywrap {
+	background: #E8E8E8;
+	margin-top: 0px;
+	padding-top: 40px;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+}
+
+.index .title {
+	margin: 1.2em 0 0.6em;
+}
+
+.article .title {
+	margin: 0.2em 0;
+	font-weight: bold;
+}
+
+.article p {
+    margin-bottom: 0px;
+}
+
+article h2 {
+	font-weight: 600;
+	line-height: 1.1;
+	font-size: 1.5em;
+}
+.avatar {
+    float:left;
+    border-radius:62px;
+    height:48px;
+    width:48px;
+    margin-top:2px;
+    margin-right:30px;
+}
+
+article section{
+	display: block;
+}
+
+article .meta {
+	color: #848484;
+	font-size: 13px;
+	text-transform: uppercase;
+	margin-bottom: 0.3em;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+article hr {
+	margin: 2em 0;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #eeeeee;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+.index {
+        padding:0;
+        margin-right:10%;
+        
+        > div {
+            margin:0;
+        }
+}
+
+.index {
+
+    > div{
+        display:table-cell;
+    }
+    
+    .title {
+        margin:0em 0 0.6em;
+    }
+    
+    .avatar {
+        float:left;
+        border-radius:62px;
+        height:48px;
+        width:48px;
+        margin-top:0;
+        margin-right:30px;
+    }
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+article address {
+	display: inline;
+	font-size: 13px;
+	font-style: normal;
+	line-height: 1.42;
+	margin: 0;
+}
+
+time {
+	display: inline;
+	font-size: 13px;
+}
+
+div {
+	display: block;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+article {
+	background: #fff;
+	padding: 40px 0;
+	font-size: 16px;
+}
+
+
+
+
+//matt end
 
 // Using media queries with like this:
 // @include media-query($palm) {

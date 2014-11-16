@@ -1,7 +1,12 @@
 ---
 layout: post
 title: "LayoutInflater Basics"
-author: "Brad Curran"
+author: 
+    name: "Brad Curran"
+    image: "brad.png"
+    twitter: "bradleycurran"
+excerpt: "Introduction to Layout Basics. Hold onto those hats."
+
 ---
 If you're new to Android Development you've probably seen this guy called [LayoutInflater](http://developer.android.com/reference/android/view/LayoutInflater.html) and you're wondering what it does. Fortunately it's pretty easy to explain. 
 

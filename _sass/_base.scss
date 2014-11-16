@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -97,7 +95,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $hover-color;
         text-decoration: underline;
     }
 }

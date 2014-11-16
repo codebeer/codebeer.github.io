@@ -6,17 +6,41 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
+<article class="container">
+  {% for post in site.posts %}
+    <section class="index">
+      <img src="images/{{ post.author.image }}" class="avatar">
+      <div>
+        <h2 class="title">
+          <a href="{{ post.url | prepend: site.baseurl }}" rel="prefetch">
+            {{ post.title }}
+          </a>
+        </h2>
+        <p>
+          {{ post.excerpt || post.title}}
+        </p>
+        <div class="meta">
+          </br>
+          Written By <address>{{ post.author.name }}</address> &mdash; <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+        </div>
+      </div>
+      <hr>
+    </section>
+  {% endfor %}
+</article>
+  <!--<ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <span>
+          <img src="/images/{{ post.author.image }}" class="avatar">
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        </span>
       </li>
     {% endfor %}
-  </ul>
+  </ul>-->
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
