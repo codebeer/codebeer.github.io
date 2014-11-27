@@ -3,37 +3,41 @@
 \****************************************************************************/
 
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    border-top: 5px solid $white;
+    border-bottom: 1px solid $brand-light;
+    min-height: 60px;
+    background: $brand-dark;
     // Positioning context for the mobile navigation icon
     position: relative;
+    font-color:  $white;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 30px;
+    font-family: "Raleway", "Lato";
+    line-height: 64px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-weight: bold;
+    
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $white;
     }
 }
 
 .site-nav {
     float: right;
-    line-height: 56px;
-
+    line-height: 74px;
+    font-family: "Raleway", "Lato";
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        color: $white;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one

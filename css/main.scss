@@ -13,13 +13,18 @@ $spacing-unit:     20px;
 
 $text-color:       #333;
 $background-color: #fdfdfd;
+
 $brand-color:      #6E02AA;
+$brand-light:	   #9709E5;
+$brand-dark:	   #2C0144;
 
 $hover-color:	   #9709E5;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
+
+$white:			   #FFFFFF;
 
 $on-palm:          600px;
 $on-laptop:        800px;
