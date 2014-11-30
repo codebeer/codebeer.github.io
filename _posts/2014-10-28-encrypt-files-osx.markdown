@@ -4,7 +4,8 @@ title: "How to encrypt files on OS X by the command line"
 author: 
     name: "Brad Curran"
     image: "brad.png"
-    twitter: "bradleycurran"
+    twitter: "bradley_curran"
+excerpt: "Look like a badass by encrypting a file on the Terminal. "
 ---
 OS X has a great encryption utility called [FileVault](http://support.apple.com/kb/ht4790). While simple, out of the way full disk encryption is great, it doesn't help so much when you want to encrypt a single file to store securely. 
 

@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Should booleans be used in method signatures?"
-author: "Brad Curran"
+author: 
+    name: "Brad Curran"
+    image: "brad.png"
+    twitter: "bradley_curran"
+excerpt: "Well, it all depends. "
 ---
 Early on when I was learning how to write software I'd often add a boolean to extend functionality of a method. Most developers do this at some stage and eventually get the feeling that something is wrong. This post tries to explain what the problem is and how to write code that's easier to maintain. 
 

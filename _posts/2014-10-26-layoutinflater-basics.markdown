@@ -4,7 +4,7 @@ title: "LayoutInflater Basics"
 author: 
     name: "Brad Curran"
     image: "brad.png"
-    twitter: "bradleycurran"
+    twitter: "bradley_curran"
 excerpt: "Introduction to Layout Basics. Hold onto those hats."
 
 ---

@@ -4,7 +4,8 @@ title: "Why you should give LayoutInflater a root"
 author: 
     name: "Brad Curran"
     image: "brad.png"
-    twitter: "bradleycurran"
+    twitter: "bradley_curran"
+excerpt: "Having parents is important. "
 ---
 We've discussed the sometimes mysterious [LayoutInflater]({% post_url 2014-10-26-layoutinflater-basics %}) before, but I wanted to talk about one feature in particular that I have only found out recently, even though I've been developing Android applications for a few years now. 
 
