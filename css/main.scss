@@ -15,27 +15,27 @@ $text-color:       #333;
 $background-color: #fdfdfd;
 
 $brand-color:      #6E02AA;
-$brand-light:	   #9709E5;
-$brand-dark:	   #2C0144;
+$brand-light:    #9709E5;
+$brand-dark:     #2C0144;
 
-$hover-color:	   #9709E5;
+$hover-color:    #9709E5;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 15%);
 
-$white:			   #FFFFFF;
+$white:        #FFFFFF;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
 h1, h3, h4, h5 {
-	font-family: "Lato", "proxima-nova", "Helvetica Neue", Avenir, Arial, sans-serif;
-	color: $grey-color-dark;
+  font-family: "Lato", "proxima-nova", "Helvetica Neue", Avenir, Arial, sans-serif;
+  color: $grey-color-dark;
 }
 
 h2 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 // Using media queries with like this:
@@ -58,4 +58,86 @@ h2 {
         "syntax-highlighting"
 ;
 
+.img-circle {
+  border-radius: 50%;
+}
 
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+.img-about {
+    vertical-align: middle;
+}
+
+.about-container{
+ // position: relative;
+ // min-height: 1px;
+  overflow-x:auto; 
+  overflow-y:hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 45px;
+
+}
+
+.about-container:after{
+   clear:both;
+}
+
+p.about {
+  font-size: 14px;
+}
+
+.left-pad {
+  padding-left: 10px;  
+}
+
+.right-pad {
+  padding-right: 10px;
+}
+
+.col {
+  float: left;
+}
+
+// Bootstrap-Like column fills.
+.col-6 {
+    width: 50%;
+}
+.col-5 {
+    width: 41.66666666666667%;
+}
+.col-4 {
+    width: 33.33333333333333%;
+}
+.col-3 {
+    width: 25%;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: block;
+  clear:both;
+}
+
+.centered {
+    text-align: center;
+}
+
+.padded {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.padded-4 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-family: "Lato", "proxima-nova""Helvetica Neue", Avenir, Arial, sans-serif;
+  font-color: $grey-color;
+}
