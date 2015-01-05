@@ -3,6 +3,11 @@ layout: post
 title: Creating your own Homebrew Tap and Formula
 tags:
     - homebrew
+author: 
+    name: "Brad Curran"
+    image: "brad.png"
+    twitter: "bradley_curran"
+excerpt: "A million lines for you. Two lines for everyone else. "
 ---
 
 Distributing command line apps and scripts that you've written on OSX is a lot more complicated than I thought. 
