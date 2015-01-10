@@ -90,6 +90,13 @@ a {
     }
 }
 
+a .no-line {
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 
 
 /**
@@ -168,16 +175,15 @@ pre {
     &:after {
         content: "";
         display: table;
-        clear: both;
     }
 }
-
-
 
 /**
  * Icons
  */
 .icon {
+
+    font-size: larger;
 
     > svg {
         display: inline-block;
@@ -189,4 +195,8 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+a .icon a:hover{
+    text-decoration: none;
 }

@@ -285,3 +285,80 @@ time {
     display: inline;
     font-size: 13px;
 }
+
+/****************************************************************************\
+ * About                                                                    *
+\****************************************************************************/
+
+.about-container {
+  overflow-x:auto; 
+  overflow-y:hidden;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 250% $spacing-unit;
+}
+
+.about-container:after{
+   clear:both;
+}
+
+p.about {
+  font-size: 14px;
+}
+
+.sub-title {
+  font-weight: bold;
+  font-family: "Lato", "proxima-nova""Helvetica Neue", Avenir, Arial, sans-serif;
+  font-color: $grey-color;
+}
+
+
+/****************************************************************************\
+ * General (Spacing)                                                        *
+\****************************************************************************/
+
+.left-pad {
+  padding-left: 50% $spacing-unit;  
+}
+
+.right-pad {
+  padding-right: 50% $spacing-unit;
+}
+
+.col {
+  float: left;
+}
+
+// Bootstrap-Like column fills.
+.col-6 {
+    @extend .col;
+    width: 50%;
+}
+.col-5 {
+    @extend .col;
+    width: 41.66666666666667%;
+}
+.col-4 {
+    @extend .col;
+    width: 33.33333333333333%;
+}
+.col-3 {
+    @extend .col;
+    width: 25%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.padded {
+  margin-top: 50% $spacing-unit;  
+  margin-bottom: 50% $spacing-unit;  
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  display: block;
+  clear:both;
+}
