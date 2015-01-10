@@ -29,13 +29,15 @@ $white:        #FFFFFF;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-h1, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Avenir, Arial, sans-serif;
   color: $grey-color-dark;
+  font-weight: bold;
+  line-height: $base-line-height;
 }
 
-h2 {
-  font-weight: bold;
+h1 { 
+  font-size: 175%;
 }
 
 // Using media queries with like this:
