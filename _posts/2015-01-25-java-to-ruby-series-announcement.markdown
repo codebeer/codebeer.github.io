@@ -21,7 +21,7 @@ I escaped (again) to the country with a WiFi dongle to learn a new programming l
 + Building with Rake
 + & More
 
-### Audience  
+## Audience  
 
 Have a basic familiarity with programming in Java (ideally).  
 
