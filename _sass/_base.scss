@@ -73,16 +73,6 @@ li {
 }
 
 
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
-}
-
-
-
 /**
  * Links
  */
@@ -97,6 +87,13 @@ a {
     &:hover {
         color: $hover-color;
         text-decoration: underline;
+    }
+}
+
+a .no-line {
+    
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -178,16 +175,15 @@ pre {
     &:after {
         content: "";
         display: table;
-        clear: both;
     }
 }
-
-
 
 /**
  * Icons
  */
 .icon {
+
+    font-size: larger;
 
     > svg {
         display: inline-block;
@@ -199,4 +195,8 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+a .icon a:hover{
+    text-decoration: none;
 }
