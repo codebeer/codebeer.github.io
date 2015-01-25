@@ -5,12 +5,12 @@ author:
     name: "Matt Witherow"
     image: "matt.png"
     twitter: "MattJWitherow"
-excerpt: ""
+excerpt: "Ruby Codecation Post #1. What are Ruby :Symbols and why do they exist?"
 ---
 
 ## Foreword
 
-This belongs to a [Java to Ruby Series][1] of posts. Checkout that series link for a description of the series' intended audience and other posts available.
+This belongs to a **[Java to Ruby Series][1]** of posts. Checkout that series link for a description of the series' intended audience and other posts.
 
 ---
 
@@ -161,7 +161,7 @@ You can see this and many more Ruby style guidlines [here][3], and if you think 
 
 The Ruby Interpreter has a magical book called a 'Symbol Table' that holds onto all the :symbols you create - this table is protected from Garbage Collection in older versions of Ruby - so if you abused :symbols somehow maybe you could bloat your interpreter out.  (https://bugs.ruby-lang.org/issues/9634)
 
-[1]: /
+[1]: {% post_url 2015-01-25-java-to-ruby-series-announcement %} 
 [2]: http://www.ruby-doc.org/core-2.1.4/Symbol.html
 [3]: https://github.com/bbatsov/ruby-style-guide#hash-literals
 [4]: http://ruby-doc.org/core-2.1.0/doc/syntax/literals_rdoc.html#label-Hashes
