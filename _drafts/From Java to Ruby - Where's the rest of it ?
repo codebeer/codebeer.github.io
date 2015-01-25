@@ -1,0 +1,225 @@
+--
+layout: post
+title: "Java to Ruby - Syntactic Sugars"
+author: 
+    name: "Matt Witherow"
+    image: "matt.png"
+    twitter: "MattJWitherow"
+excerpt: ""
+---
+
+## Foreword
+
+This belongs to a [Java to Ruby Series][1] of posts. Checkout that series link for a description of the series' intended audience and other posts available.
+
+The question I often ask myself when learning a new langauge is "Where's the rest of it?".
+As a Java developer, I feel safe in my ocean of strongly typed code. It's explicit, it's there, read it. When it's the first thing you learn, it feels right to declare everything, no matter how painful.
+
+When languages like Scala come along with their automatic getters,setters and constructors - we get sheepish. (Hm, future post.)
+
+This post is aimed at explaining some of the (missing) syntax and magic of Ruby that will help you read examples online as you're getting started. 
+
+Ruby developers love telling you how bautiful Ruby is to read and write. How expressive it is - like a Haiku or Jim Carey's face.   
+
+Here's some notes I made coming from Java when reading Ruby code online.
+
+## Conditions Return Values Now
+
+Normal example.
+{% highlight ruby %}
+if has_honey
+	bear_state = "Happy"
+else
+	bear_state = "Grumpy"
+{% endhighlight %}
+
+In Ruby, the `if` condtional itself returns a value! It's such a small thing but it makes all the difference.
+{% highlight ruby %}
+bear_state = if has_honey
+	"Happy"
+else
+	"Grumpy"
+{% endhighlight %}
+Also, note the lack of any 'return' keyword! The `if` and the `else` return these values implicitly.
+
+### Multiple Return Values
+
+Maybe you have more than just a binary outcome? Then use a case statement in the same way.
+{% highlight ruby %}
+bear_origin = case bear.type
+  when "koala" then :australia
+  when "brown" then :USA
+  when "panda" then :china
+end
+{% endhighlight %}
+
+## dotdotdots (...) are now stars
+
+Java
+{% highlight java %}
+//print_animal_colours("Bear", "brown", "black", "white");
+public void printAnimalColours(String animal, String... colours);
+{% endhighlight %}
+
+Ruby
+{% highlight ruby %}
+def print_animal_colours(animal, *colours)
+{% endhighlight %}
+
+## Default Parameters instead of Overloaded Methods
+
+I already mentioned this is a [previous post][1], check it out.
+
+## Exceptions 
+
+Say goodbye to the `throw, try, catch` clauses, now you have the slightly less cumbersome 
+
+{% highlight ruby %}
+raise <exception>
+	#...
+begin
+	#<try thing>
+rescue
+	#<catch error>
+{% endhighlight %}
+
+## Custom Objects
+
+Instead of same-name constructors, Ruby has the `initialize` keyword for constructing default objects.
+
+{% highlight ruby %}
+class Bear
+	def initialize(name, type)
+		@name = name 
+		@type = type
+	end
+end
+{% endhighlight %}
+
+You can probably tell from this alone that Ruby also has special syntax for defining Instance variables (with the `@` character) - this saves a lot of template code you would otherwise write in Java.
+
+## Subclassing
+
+Instead of the `extends` keyword, Ruby uses a '<' symbol. 
+
+{% highlight ruby %}
+class Bear < Animal 
+	def initilize(name, type)
+		super(name)
+		@type = type
+	end
+end
+{% endhighlight %}
+
+##Setters & Getters (aka Accessors & Mutators)
+
+The `attr_reader` method defines the 'getter' method for you, this convenient shortcut means you don't have to write any template getter code (at least if your getter is just simply exposing the value, and not doing some special mutations).
+
+The same method exists for setters, called `attr_writer` - this sets the value of the instance variable with the same name as the setter. 
+
+Usually you want to expose both the getter and setter for an instance variable. You don't have to write both `attr_reader` and `attr_writer`, you can use another method, the `attr_accessor`, which will define both at once!
+
+{% highlight ruby %}
+class Bear
+	attr_accessor name
+	def initialize(name, type)
+		@name = name 
+		@type = type
+	end
+end
+{% endhighlight %}
+
+## Ruby developers love [Short Circuit Evaluation](http://en.wikipedia.org/wiki/Short-circuit_evaluation)
+
+###Short Circuiting in Java
+{% highlight java %}
+if ( name != null && name.length > 8 ){
+	//we prevent null pointer exceptions from the .length call 
+	by shorting out the evaluation early with a familiar null check.
+} 
+{% endhighlight %}
+
+Shorting is also commonly used for evaulation ...
+
+{% highlight ruby %}
+result = nil || 1    # 1
+result = 1   || nil  # 1
+{% endhighlight %}
+
+Ruby provides one of my favourite shorting tricks, *conditional assignment*
+{% highlight ruby %}
+user_session ||= sign_in
+#only if user_session is nil, assign the return value of sign_in
+{% endhighlight %}
+
+Ruby lets you use this operator to be really concise, the following example eliminates the need for an `if` statement.
+
+{% highlight ruby %}
+def sign_in
+  user_session || sign_in_user
+  #if the user_session is nil, call the sign_in_user method, otherwise carry on.
+end
+{% endhighlight %}
+
+##Array Manipulation
+
+You can easily add one array to another by joining the two existing arrays and simulteanously removing duplicates all with a single operator!
+{% highlight ruby %}
+array | other_array
+{% endhighlight %}
+
+You can append one array to another easily too. Also, this expression returns the array itself, so you can chain several appends together!
+{% highlight ruby %}
+array << array2 << array3
+{% endhighlight %}
+
+You can even simulate Set Intersection, this code returns a new array containing elements common only to both, with no duplicates.
+{% highlight ruby %}
+array & other_array
+{% endhighlight %}
+
+## Class re-opening & (why ruby slow)
+
+open up classes and add what you like, it's interpreted in real-time, its Java reflection on steroids. 
+
+you could break other peoples code at runtime by changing class behaviour - only do it to your own private classes.
+
+##
+Syntax something: value means exactly same as :something => value. It is just a little more readable.
+
+##loops
+
+arr = [1, 2, 3]
+
+# bad
+for elem in arr do
+  puts elem
+end
+
+# note that elem is accessible outside of the for loop
+elem # => 3
+
+# good
+arr.each { |elem| puts elem }
+
+# elem is not accessible outside each's block
+elem # => NameError: undefined local variable or method `elem'
+
+#Exceptions
+
+go between the signiture and the code itself, not thrown inside the code like Java.
+
+## Gotchya's
+
+ONLY NIL is falsey.
+
+"" treated as “true”!
+0  treated as “true”!
+[] treated as “true”!
+
+unless name.length
+	warn "User name required"
+end
+//will never be false!
+
+[1]: {% post_url 2014-12-27-response-to-booleans-in-method-sigs %} 

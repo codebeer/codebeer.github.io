@@ -1,0 +1,213 @@
+
+
+Java to Ruby - Blocks, Lamdas & Procs
+
+We touched on the block and yield mechanisms before (link)
+
+
+
+
+#### Procs
+
+From the docs : "Proc objects are blocks of code that have been bound to a set of local variables. Once bound, the code may be called in different contexts and still access those variables."
+
+You can think of Procs as little block parcels that we want to use at a later time. So now we don't have to use in-line blocks like last time. The docs actually has a very good example.
+
+From what I can tell a Proc (said as in, frock or clock) os short for Procedure. Given our laymens reasonsing, makes sense. 
+
+You can create a Proc with any block parameter, so you can use the curly brace or do/end sytnax
+
+example = Proc.new { puts "I'm a proc!"}
+example.call 
+
+
+or
+
+example = Proc.new do
+	puts "Im a proc!"
+end
+example.call
+
+## distinguishing differnces 
+
+http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas
+
+
+
+##Why Use Lambda's over Blocks
+
+You don't have to use a generic yield, you can be meaningful. This to me is reminisant of the little iOS work i did following the Delegation pattern. 
+
+class Bear
+	def eat
+		unless hungry?
+			yield
+		else
+			raise 'Bear is Full'
+		end
+	end
+end
+
+//Called with 
+
+bear = Bear.new('Brown Bear')
+bear.eat { puts "I'm eating some Honey from this tree!"}
+
+--compare with
+
+class Bear
+	def eat(meal)			// !! add param
+		unless hungry?
+			meal.call		// !! signal to callback
+		else
+			raise 'Bear is Full'
+		end
+	end
+end
+
+//called with
+
+bear = Bear.new('Brown Bear')
+meal  = -> { puts "I'm eating some Honey from this tree!"}
+bear.eat(meal)
+
+--compare with
+
+class Bear
+	def eat(meal, fallback)			// !! add params
+		unless hungry?
+			meal.call				// !! signal to callback
+		else
+			fallback.call 			// !!
+			raise 'Bear is Full'
+		end
+	end
+end
+
+//called with
+
+bear = Bear.new('Brown Bear')
+meal  = -> { puts "I'm eating some Honey from this tree!"}
+fallback  = -> { puts "I'm taking a nap instead"}
+bear.eat(meal, fallback)
+
+
+This is a very contrived example, but you can begin to see similar patterns if you've worked in any psuedo functional language before. Now we can offer (or 'delegate') different callback functions that could use. 
+
+I affectionaly call this a swiss cheese method. A method with holes in it (that you plug your own code into). 
+
+## Blocks to Procs.
+
+Like we said Procs are parceled Blocks, so if you try to user them exactly as you would a blcok - youll have errors. For example, consider this block loop...
+
+bears = ["black", "polar", "panda"]
+//normal
+bears.each do |bear|
+	puts bear
+end
+
+//with lamda
+
+my_block = lambda {|bear| puts bear}
+bears.each(my_block)					//crash
+
+to 'unbox' the proc and turn it into a raw block, append it with an '&'
+
+my_block = lambda {|bear| puts bear}
+bears.each(&my_block)					//horaa.
+
+//going the other way
+
+You can even turn Blocks, back into Procs in a similar way.
+This example melted my brain.
+
+
+class BearFarm
+	attr_accessor :bears
+
+	def each
+		bears.each { |bear| yield bear }
+	end
+end
+
+//called like this..
+farm = BearFarm.new(bears)
+farm.each do |bear|
+	puts bear
+end
+
+That's fine and what we would have done until now. But we could pass a block INTO the each method. Normally this would become an annonmous yeild, but we want a named Proc. You can achieve this by giving the each function a named paramter, prepended with an &, essentially reversing what we learnt earlier, and turning our block into a proc.
+
+however we already saw that passing an unboxed proc to the each fucntional will not work, so we can turn it BACK into a block by UNboxing it with the & again...
+
+An example will clarify.
+
+class BearFarm
+	attr_accessor :bears
+
+	def each(&do_this)			// block to proc
+		bears.each(&do_this)	// proc  to block
+	end
+end
+
+We can go further and convert symbols to procs.
+
+bears.each { |bear| bear.eat }
+//same as
+
+bears.each(&:eat)
+
+it will use the symbol to find the matching method name belonging to items being iterated over. Coming from a Java background this appears to me as a very expensive exercise - if i were to implement this feature in Java it would utalize a great deal of run-time Reflection. Well, you're in Ruby land now son that's how the whole system works. To my understanding, it's one of the reasons for the 'Ruby is slow' conversation. It makes developers lives easier, at the cost of hardware's lives harder. 
+
+Check out the reflection library if your new to it. 
+
+It's unquestionably a very powerful facet of the language, and the defense against it is that "a developer's time costs more than the computers". Admirable philospehy, but I still feel like some of my career mentors would have slapped me if i folded this into some Java source. 
+
+But holy moly is it convenient and satisfying to use.
+
+// Optional Block input. 
+
+we touched on naming incoming blocks using the &, but one of my new favourite ruby features is the built in 'block_given?' method. 
+
+class Bear
+
+	def eat
+		if block_given?
+			puts yield
+		else
+			puts 'Bear eats normally'
+	end
+end
+
+
+//call with block
+bear.print { "Bear eats madly 'cause he's hungry! "}
+
+bear.print // Bear eats normally
+
+
+
+## Closures
+
+Closures are just like lambdas, but they maintain the current state of all local variables when the lambda was created. 
+
+Generally, A closure is a function, whose return value depends on the value of one or more variables declared outside this function. 
+
+def eat(meal)
+	lambda { |food| puts "Bear ate #{food} for his #{meal}"}
+end
+
+bear_lunch = eat("lunch")
+
+//resolves to lambda { |food| puts "Bear ate #{food} for his lunch" }
+
+bear_lunch.call("a camper's Picnic")
+
+# => Bear ate a camper's Picnic for his lunch
+
+
+If you're using Ruby 1.9 or greater you can use the "Stabby Lamba" syntax to create a lamda
+
+example = -> {puts "I'm a Stabby Lambda!"}
+example.call
+
