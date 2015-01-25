@@ -60,9 +60,9 @@ From the [Ruby Docs][2]
 
 ### What?
 
-Simply put - If you create a symbol, it will remain with you in all contexts, almost like a global. 
+Simply put - If you create a symbol, it will remain with you in all contexts. 
 
-If you create a `:count` symbol for a Rabbit class, all rabbits will share the count - like a Java `static` field.  
+Additionally, if you create a `:count` symbol for a Rabbit class, all rabbits will share the count - yes - like a Java `static` field.  
 
 ---
 
