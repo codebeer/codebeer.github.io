@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I built a SteamBox"
+title: "I Built a SteamBox"
 author: 
     name: "Matt Witherow"
     image: "matt.png"
@@ -15,14 +15,42 @@ excerpt: "Exactly a year ago I built a SteamBox PC because I didn't want to risk
 
 If you're thinking of moving you're PC into the lounge room, my build experince could offer some hints. 
 
-+ Be **very careful** which TV you buy, unless you like Screen Tearing, I did a lot of research.  
-+ Be consciouse of your Form Factor, you will never beat factory builds.  
-+ The magic is ruined if the rig isn't silent - so splash out on the case etc.  
-+ This build was MILLIMETER PERFECT. If I didn't get this exact PSU, it WOULD NOT FIT against the graphics card.   
++ Be **very careful** which TV you use/buy, you can get severe lag or *screen tearing*.
++ You will never beat factory built form factors.  
++ In the lounge setting, you may be more consciouse of acoustics, get a good case to reduce noise.
++ My build was **millimeter perfect**. If I didn't get this exact PSU, it would NOT FIT.  
++ I had a strict budget to build to when making choices, but have recently added a new 500GB Evo SSD.
 + I was really happy with the final product.  
 
+## Parts List
 
-## An Irrelevant Foreword on Agile Development
+|-------------------------------------------------------------------|---------------------------:|
+| Component                                                         | Price (Jan, 2014, AUD)     |
+|:----------------------------------------------------------------- | --------------------------:|
+|                                                                   |                            |
+| Intel [Core i5-4670K][cpu] 3.4GHz 6MB LGA 1150 Haswell Boxed CPU  | **$275.00**                |
+| ASRock [Z87E-ITX][mboard] Intel Z87 S1150 (2xDDR3/WiFi/Min-ITX)   | **$165.00**                |
+| G.Skill [Ripjaws-X][ram] 8G Kit(4Gx2) DDR3 1866 F3-14900CL        | **$99.00**                 |
+| Samsung [840BW EVO][ssd] MZ-7TE250BW 250G SATAIII SSD             | **$188.00**                |
+| Gigabyte N770OC-4GD 4G [GTX 770][gpu] PCI-E VGA Card              | **$509.00**                |
+| Fractal Design [Node 304][case] Mini ITX/DTX Case USB 3.0         | **$115.00**                |
+| Corsair [CS650M][psu] 650Watt 80Plus Gold ATX Power Supply        | **$139.00**                |
+|                                                                   |                            |
+|-------------------------------------------------------------------|---------------------------:|
+| 			                                                        | **TOTAL** $1490 AUD        |
+|:----------------------------------------------------------------- | --------------------------:|
+
+## Comments on Parts (A Year After)
+
++ **CPU :** The i5-4670K has been replaced by the i5-4690K and is still highly reccomened.
++ **Graphics :** The GTX770 was widely accepted as one of the best purchases for 2013. I'm super impressed by my (cheaper) Gigabyte version. I would now look into the 780's etc. I was also conscience of long term running costs, and opted not to SLI two cards. I can't help but feel like the large 4GB on board DDR5 Ram makes the build. The name of the game is localized caching. Put as much as possible on the GPU, then its local RAM, THEN the normal RAM, THEN hopefully rarely the SSD.
++ **RAM :** Even though the Graphics Card has 4GB onbaord (which is insane) I would encorage you to future proof and go for the 2x8GB sticks rather than 2x4GB just because the mother board only suppers two sticks.
++ **Motherboard :** I didn't buy this board with the explicit intention to use the on-board WiFi - however I never ended up plugging in a hard line at all! The WiFi recpetion is awesome and I happily game online with others wirelessly with no lag and the router in another room. Technology man! I can't beleive they get so much on a tiny board. 
+
+
+
+
+## An Irrelevant Foreword on Agile Development & COmmunity Involvemewnt.
 
 Valve are known for keeping their cards close to their chest with a "It'l be ready when It's ready" attitude which I (as a developer) secretly admire. 
 
@@ -46,58 +74,58 @@ After a year, I'm still running new releases on full settings, such as Far Cry 4
 
 You could get all the hardware quite a bit cheaper now thanks to technologies constrnatly degrading value. Also in Australia prices are always higher.
 
-## Parts List
 
-+ Intel Core i5-4670K 3.4GHz 6MB LGA 1150 Haswell Boxed CPU **$275.00** 
-+ ASRock Z87E-ITX Intel Z87 S1150 2xDDR3/SATA3/USB3.0/HDMI/DVI/DP/802.11ac Wi-Fi/BT/Min-ITX MB **$165.00**
-+ G.Skill Ripjaws-X 8G Kit(4Gx2) DDR3 1866 F3-14900CL 9D-8GBXL **$99.00**
-+ Samsung 840BW EVO MZ-7TE250BW 250G SATAIII SSD Solid State Drive **$188.00**
-+ Gigabyte N770OC-4GD 4G GTX 770 PCI-E VGA Card **$509.00** 
-+ Fractal Design Node 304 Mini ITX/DTX Case USB 3.0 / No PSU (Fits Standard ATX PSU) **$118.00**
-+ Corsair CS650M 650Watt 80Plus Gold ATX Power Supply **$139.00** 
 
 ## The Lounge Room : Before
 
 ![loung room without steambox][1]
 
-## Parts List
+## Boxed Parts
 
 ![all boxed parts][2]
 
-##
-
 ## The Case
-
-Here's the case next to an iPhone 4 for scale.
 
 ![fractal case beside iphone][3]
 
+Here's the case next to an iPhone 4 for scale. Also note the visible vent on the side, that will be the PSU exhaust.
 
 ## The Motherboard
 
 ![unboxed mother board][4]
 
-Really happy with the board, and the value for money since I last built a serious rig (many years ago!) - the built in WiFi is super effective and very welcomed, i never ended up plugging a hardline in at all.
+I was really happy with the board. The value for money since I last built a serious rig (many years ago!) is impressive. The built-in WiFi is super effective and very welcomed, i never ended up plugging a hardline in at all.
 
 ## Graphics Card
 
 ![fans at lower rpm for a quieter heatsink][5]
+I opted for the Gigabyte vendor for my graphics card. The Gigabyte version did very well in online reviews, and I have bought Gigabyte in the past. Not buying premium vendor cases can save a lot of money. I was very happy with the tri-fan setup, more fans run at a lower rpm so that most of the time - the unit runs silently. 
+
+It will make an auible whirl/hum generally only at stress on a 30c degree day. 
+
+For the first day or two, it made a worrying clicking noise, and I oculd visibly see that one of the fans looked as if it wasn't perfectly centered when spinning - but thankfully a few days of use fixed it and it dissapeared. 
+
 ![gcard is heavy but still slim][6]
 
+The card has some serious heatsinks going on as well, making it quite heavy - but it remains super slim (another benefit of the Gigabyte build). Buying from a nother vendor with a thiker casing (even 5mm) would make cable managment harder. 
+
 ## PSU
+
 ![corsiar gold psu][7]
 
-Shoter length.
+I just want to emphasise again that this Corsair unit is just a tad shorter than most units, and it was super important in order to make it all fit. Also, love yourself - don't skimp on power supplies. Get Gold rated units. You'll thank me. I've had some crappy ones before.
 
-## SSD - Gods gift to man.
+## SSD
 
 ![samsung ssd evo840][8]
 
-The performance gains are rediculous.
+The performance gains are rediculous with SSD's coming from traditional disks. Even in the past 12 months thev've come down close to 50c a GB. 
 
 ## Ram
 
 ![ripjaw ram][9]
+
+I forked out for some high quality RAM, but don't go overboard - at a certain point the cost of better timings brings vertually no noticable benefits. I also made my hardware choices knowing that as the rig ages, I would be tempted to overclock. 
 
 ## Building
 
@@ -129,46 +157,45 @@ You can see that because of the orientation of the intake fan, the main power ca
 
 Furthermore, the graphics card only just fits lengthwise, but the case intake fan cables require that small amount of space. It can be fiddly to get right, but with some gentle coersion and some cable ties, you can make it work.
 
-This image shows the free space you have to work with in the PSU/GCard corner.
+This image shows the free space you have to work with in the PSU/GCard corner. (very very little)
 
 ![spacing is tight for the Gcard][13]
 
-
 ## Build Stage 2
-
-Here I've delicately manuvered the Ripjaw's in, and installed the CPU with a stock cooler. 
 
 ![cpu and ram added][14]
 
-Then finally you can re-install the harddrive bay.
+Here I've delicately manuvered the Ripjaw's in, and installed the CPU with a stock cooler. This stage is probably the hardest with man hands.
 
 ![rig with bay reinstalled][15]
 
+Then finally I re-mounted the harddrive bay.
+
 ## Cable Management
+
+![cables neat for airflow][16]
 
 You can see that cable management is going to be important given the tight spaces as you install each component. The case doesn't really sport many dedicated cable solutions built-in. I tidied the cables as I went along.
 
 This image shows my method to the cable madness, basically I'm trying to maintain easy airflow from front to back, by keeping the cable spine running along **behind** the graphics card board. This would make even more sense if/when I install a CPU cooler with perpendicular fans. 
 
-![cables neat for airflow][16]
-
 ![bundles of cables][17]
-
-The flimsy CPU power cable had me a little worried, so I anchored it to a SSD cable to keep it from fan blades.
 
 ![bundles of cables][18]
 
-## Whoops
+The flimsy CPU power cable had me a little worried, so I anchored it to a SSD cable to keep it from fan blades.
 
-When I actually went to turn it on i literally had one of those "...wait" moments. To install windows from disk, I had to patch in an old DVD Drive. Then ended up using it for installing all the hardware Drivers anyway. This was always a dedicated SteamBox machine, so everything comes straight from the cloud - which is pretty normal now days. But just be aware, you could never get a disk drive in these things. 
+## Whoops
 
 ![needed a dvd drive to get started][19]
 
+When I actually went to turn it on i literally had one of those "...wait" moments. To install windows from disk, I had to patch in an old DVD Drive. Then ended up using it for installing all the hardware Drivers anyway. This was always a dedicated SteamBox machine, so everything comes straight from the cloud - which is pretty normal now days. But just be aware, you could never get a disk drive in these things. 
+
 ## Lounge Room : After
 
-Here it is! All finished and sitting in its new home.
-
 ![finished rig][20]
+
+Here it is! All finished and sitting in its new home.
 
 ![after photo][21]
 
@@ -180,6 +207,11 @@ If you have any questions about finished-product performance I'm happy to answer
 If you have any questions about the build process itself, I have dozens of photos detailing each step that I have omitted for brevity. 
 
 TomsHardware.com remains an amazing resource for dollar-for-performance benchmarking. Those guys are doing some solid work. 
+
+There is something really satisfying about buying and playing games from the couch for the fraction of the costs...
+
+<blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Seriously, it&#39;s like stealing. My nearest retail store has one title for that. <a href="https://twitter.com/hashtag/steamsales?src=hash">#steamsales</a> <a href="https://twitter.com/hashtag/steamBoxPreperation?src=hash">#steamBoxPreperation</a> <a href="http://t.co/coB9hDOBr6">pic.twitter.com/coB9hDOBr6</a></p>&mdash; Matt Witherow (@MattJWitherow) <a href="https://twitter.com/MattJWitherow/status/417058478281084928">December 28, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 [1]: /images/posts/steambox/img1.png "Note empty space beside TV"
@@ -204,3 +236,10 @@ TomsHardware.com remains an amazing resource for dollar-for-performance benchmar
 [20]: /images/posts/steambox/img20.JPG "finished rig"
 [21]: /images/posts/steambox/img21.JPG "After Shot: filled space beside the TV"
 
+[cpu]: http://www.tomshardware.com/reviews/build-your-own-geforce-gtx-770-sli,3709.html
+[mboard]: http://www.tomshardware.com/reviews/z87-motherboard-roundup,3656-26.html
+[ram]: http://www.newegg.com/Product/Product.aspx?Item=N82E16820231455
+[ssd]: http://www.tomshardware.com/reviews/ssd-recommendation-benchmark,3269.html
+[gpu]: http://www.tomshardware.com/reviews/geforce-gtx-770-gk104-review,3519-28.html
+[case]: http://www.fractal-design.com/home/product/cases/node-series/node-304-black
+[psu]: http://www.corsair.com/en/cs-series-modular-cs650m-650-watt-80-plus-gold-certified-psu
