@@ -13,14 +13,16 @@ excerpt: "Exactly a year ago I built a SteamBox PC because I didn't want to risk
 
 ## Gaming on the Couch 
 
-If you're thinking of moving you're PC into the lounge room, my build experince could offer some hints. 
+If you're thinking of moving your PC into the lounge room, my build experience could offer some hints. 
 
-+ Be **very careful** which TV you use/buy, you can get severe lag or *screen tearing*.
++ Be **very careful** which TV you get to avoid lag or tearing, I wrote a [seperate post][tvpost] about it!
 + You will never beat factory built form factors.  
-+ In the lounge setting, you may be more consciouse of acoustics, get a good case to reduce noise.
++ In the lounge setting, you may be more conscious of acoustics, get a good case to reduce noise.
 + My build was **millimeter perfect**. If I didn't get this exact PSU, it would NOT FIT.  
 + I had a strict budget to build to when making choices, but have recently added a new 500GB Evo SSD.
-+ I was really happy with the final product.  
++ I was really happy with the final product (PC + TV).  
+
+---
 
 ## Parts List
 
@@ -42,38 +44,44 @@ If you're thinking of moving you're PC into the lounge room, my build experince 
 
 ## Comments on Parts (A Year After)
 
-+ **CPU :** The i5-4670K has been replaced by the i5-4690K and is still highly reccomened.
++ **CPU :** The i5-4670K has been replaced by the i5-4690K and is still highly recommended.
 + **Graphics :** The GTX770 was widely accepted as one of the best purchases for 2013. I'm super impressed by my (cheaper) Gigabyte version. I would now look into the 780's etc. I was also conscience of long term running costs, and opted not to SLI two cards. I can't help but feel like the large 4GB on board DDR5 Ram makes the build. The name of the game is localized caching. Put as much as possible on the GPU, then its local RAM, THEN the normal RAM, THEN hopefully rarely the SSD.
-+ **RAM :** Even though the Graphics Card has 4GB onbaord (which is insane) I would encorage you to future proof and go for the 2x8GB sticks rather than 2x4GB just because the mother board only suppers two sticks.
-+ **Motherboard :** I didn't buy this board with the explicit intention to use the on-board WiFi - however I never ended up plugging in a hard line at all! The WiFi recpetion is awesome and I happily game online with others wirelessly with no lag and the router in another room. Technology man! I can't beleive they get so much on a tiny board. 
++ **RAM :** Even though the Graphics Card has 4GB onboard (which is insane) I would encourage you to future proof and go for the 2x8GB sticks rather than 2x4GB just because the motherboard only supports two sticks.
++ **Motherboard :** I didn't buy this board with the explicit intention to use the on-board WiFi - however I never ended up plugging in a hard line at all! The WiFi reception is awesome and I happily game online with others wirelessly with no lag and the router in another room. Technology man! I can't believe they get so much on a tiny board. 
 
+---
 
+## The TV
 
+I've made an [accompanying post][tvpost] all about the TV tech because it got a bit out of hand! Make sure you read it before you buy anything!
 
-## An Irrelevant Foreword on Agile Development & COmmunity Involvemewnt.
+---
 
-Valve are known for keeping their cards close to their chest with a "It'l be ready when It's ready" attitude which I (as a developer) secretly admire. 
+## An Irrelevant Foreword on Agile Development & Community Involvement.
 
-For things like Half Life 3, I'm happy waiting, depsite the flux of hype and rumour. 
+Valve are known for keeping their cards close to their chest with a "It'll be ready when It's ready" attitude which I (as a developer) secretly admire. 
 
-When Valve made the decission to open the conversation about their transition into the living room with the Steam Universe community - I thought it was a great move. Get the end user involved in a high risk venture early- and they did, going as far as to send out real beta hardware to user's homes.
+I'm happy waiting for things, despite the flux of hype and rumours. 
+
+When Valve made the decision to open the conversation about their transition into the living room with the Steam Universe community - I thought it was a great move. Get the end user involved in a high risk venture early- and they did, going as far as to send out real beta hardware to user's homes.
 
 As a developer working exclusively in agile environments, I'm all for customer input and frequent small iterations. I believe Valve were instrumental in this area when it came to customer marketplace interfaces - especially with the launch of Steam Greenlight - where potential customers vote on which indie games in their alpha stages should be completed and published to the store. 
 
-If you're interested in this sort of discussion, I reccomended you listen to this early podcast from @Outware (are Apps a product or Service?) starring the very bright Lucia, who had recently completed a thesis surrounding the themes of the marketing process in agile software development.  
+If you're interested in this sort of discussion, I recommend you listen to this early podcast from @Outware (are Apps a product or Service?) starring the very bright Lucia, who had recently completed a thesis surrounding the themes of the marketing processes in agile software development.  
 
 ## In Retrospect
 
-Anyway, I decided to build a SteamBox myself in Janurary of 2014 and not risk waiting months for retail Steam Boxes. A year has passed and there has been very little movement of retail availabiulity and I'm still unable to buy a steam controller - nor have I decided to install the SteamOS because so little targets it as a platform - something us onlookers feared would be a death mark for this movement. 
+Anyway, I decided to build a SteamBox myself in January of 2014 and not risk waiting months for retail Steam Boxes. A year has passed and there has been very little movement of retail availability and I'm still unable to buy a steam controller - nor have I decided to install the SteamOS because so little targets it as a platform - something us onlookers feared would be a death mark for this movement. 
 
-Developers won't target a platofrm that doesn't have suers and users wont use a platform that nobody has developed anything for. 
+Developers won't target a platform that doesn't have users and users won't use a platform that nobody has developed anything for. 
+
+---
 
 ## The Build
 
 After a year, I'm still running new releases on full settings, such as Far Cry 4 or Dragon Age Origins. Initially I ran BioShock Infinite, Far Cry 3, Witcher 2 etc on full settings. No hiccups. Looked great, ran silently.
 
-You could get all the hardware quite a bit cheaper now thanks to technologies constrnatly degrading value. Also in Australia prices are always higher.
-
+You could get all the hardware quite a bit cheaper now thanks to technologies constantly degrading value. Also in Australia prices are always higher.
 
 
 ## The Lounge Room : Before
@@ -99,15 +107,16 @@ I was really happy with the board. The value for money since I last built a seri
 ## Graphics Card
 
 ![fans at lower rpm for a quieter heatsink][5]
+
 I opted for the Gigabyte vendor for my graphics card. The Gigabyte version did very well in online reviews, and I have bought Gigabyte in the past. Not buying premium vendor cases can save a lot of money. I was very happy with the tri-fan setup, more fans run at a lower rpm so that most of the time - the unit runs silently. 
 
-It will make an auible whirl/hum generally only at stress on a 30c degree day. 
+It will make an audible whirl/hum generally only at stress on a 30c degree day. 
 
-For the first day or two, it made a worrying clicking noise, and I oculd visibly see that one of the fans looked as if it wasn't perfectly centered when spinning - but thankfully a few days of use fixed it and it dissapeared. 
+For the first day or two, it made a worrying clicking noise, and I could visibly see that one of the fans looked as if it wasn't perfectly centered when spinning - but thankfully a few days of use fixed it and it disappeared. 
 
 ![gcard is heavy but still slim][6]
 
-The card has some serious heatsinks going on as well, making it quite heavy - but it remains super slim (another benefit of the Gigabyte build). Buying from a nother vendor with a thiker casing (even 5mm) would make cable managment harder. 
+The card has some serious heat-sinks going on as well, making it quite heavy - but it remains super slim (another benefit of the Gigabyte build). Buying from another vendor with a thicker casing (even 5mm) would make cable management harder. 
 
 ## PSU
 
@@ -119,25 +128,28 @@ I just want to emphasise again that this Corsair unit is just a tad shorter than
 
 ![samsung ssd evo840][8]
 
-The performance gains are rediculous with SSD's coming from traditional disks. Even in the past 12 months thev've come down close to 50c a GB. 
+Here is the Evo840 SSD next to my old HTC One SV, and a CD-Rom for scale. It's practically a credit card.
+The performance gains are ridiculous with SSD's coming from traditional disks. Even in the past 12 months they've come down close to 50c a GB. 
 
 ## Ram
 
 ![ripjaw ram][9]
 
-I forked out for some high quality RAM, but don't go overboard - at a certain point the cost of better timings brings vertually no noticable benefits. I also made my hardware choices knowing that as the rig ages, I would be tempted to overclock. 
+I forked out for some high(er) quality RAM, but don't go overboard - at a certain point the cost of better timings brings virtually no noticeable benefits. I also made my hardware choices knowing that as the rig ages, I would be tempted to overclock. 
 
 ## Building
 
 ![empty case][10]
 
-These white trays are Hard Drive bays. Each Hard Drive bay can hold 2 hard drives. Each white plate is a prong, with each drive being mounted on the inside wall og the prong. It comes with rubber grommets for installing traditional disk drives to remove noise from vibration. 
+These white trays are Hard Drive bays. Each Hard Drive bay can hold 2 hard drives. Each white plate is a prong, with each drive being mounted on the inside wall of the prong. It comes with rubber grommets for installing traditional disk drives to remove noise from vibration. 
 
-It was mandatory in my case, and i imagine in **all* cases that you have to take the left-most HD bay off to install a Graphics Card. I left only the one bay in to give me some room - and about 6 months later installed that second 500GB SSD into the same right-most bay. 
+It was mandatory in my situation, that I have to take the leftmost HD bay off to install a Graphics Card. I left only the one bay in to give me some room - and about 6 months later installed that second 500GB SSD into the same rightmost bay. 
 
 The case also sports two intake fans hidden behind the front panel, these draw air in through the top section of mesh you can see.
 
 I suggest you install the Hard drives last so you have plenty of room to work.
+
+---
 
 ## Build Stage 1.
 
@@ -145,31 +157,33 @@ I suggest you install the Hard drives last so you have plenty of room to work.
 
 This is roughly halfway done. Things to note here is the tight lengthwise fit of the GTX770, it leaves less than an inch of space.
 
-Also, the orientation of the PSU intake / exhaust fan. The intake fan is hidden because it's facing down into the table. The case itself actually sits a few millimetres off the table surface allowing the intake fan to suck air in from below and expell it out the side (you'll later notice the case has ventalation for this purpose).
+Also, the orientation of the PSU intake / exhaust fan. The intake fan is hidden because it's facing down into the table. The case itself actually sits a few millimetres off the table surface allowing the intake fan to suck air in from below and expel it out the side (you'll later notice the case has ventilation for this purpose).
 
 The GTX770 draws fresh air from another vent along the side.
 
-At this stage you can appreciate just how important the measuring was. This particular corsiar power supply happens to be about 10mm shorter than almost all other PSUs on the market, and I honestly don't think the build would work without it. 
+At this stage you can appreciate just how important the measuring was. This particular Corsair power supply happens to be about 10mm shorter than almost all other PSUs on the market, and I honestly don't think the build would work without it. 
 
 ![spacing is tight for the PSU][12]
 
 You can see that because of the orientation of the intake fan, the main power cable has to come straight out **into** the Graphics Card. You don't want to put undue pressure on the cables by forcing a tight angle, so that 10mm makes all the difference. 
 
-Furthermore, the graphics card only just fits lengthwise, but the case intake fan cables require that small amount of space. It can be fiddly to get right, but with some gentle coersion and some cable ties, you can make it work.
+Furthermore, the graphics card only just fits lengthwise, but the case intake fan cables require that small amount of space. It can be fiddly to get right, but with some gentle coercion and some cable ties, you can make it work.
 
 This image shows the free space you have to work with in the PSU/GCard corner. (very very little)
 
 ![spacing is tight for the Gcard][13]
 
+---
+
 ## Build Stage 2
 
 ![cpu and ram added][14]
 
-Here I've delicately manuvered the Ripjaw's in, and installed the CPU with a stock cooler. This stage is probably the hardest with man hands.
+Here I've delicately maneuvered the Ripjaw's in, and installed the CPU with a stock cooler. This stage is probably the hardest with man hands.
 
 ![rig with bay reinstalled][15]
 
-Then finally I re-mounted the harddrive bay.
+Then finally I re-mounted the hard drive bay.
 
 ## Cable Management
 
@@ -199,6 +213,7 @@ Here it is! All finished and sitting in its new home.
 
 ![after photo][21]
 
+---
 
 ## Conclusion
 
@@ -208,7 +223,7 @@ If you have any questions about the build process itself, I have dozens of photo
 
 TomsHardware.com remains an amazing resource for dollar-for-performance benchmarking. Those guys are doing some solid work. 
 
-There is something really satisfying about buying and playing games from the couch for the fraction of the costs...
+There is something really satisfying about buying and playing games from the couch for the **fraction** of the costs, look at this tweet in the lead up to my build!
 
 <blockquote class="twitter-tweet" data-cards="hidden" lang="en"><p>Seriously, it&#39;s like stealing. My nearest retail store has one title for that. <a href="https://twitter.com/hashtag/steamsales?src=hash">#steamsales</a> <a href="https://twitter.com/hashtag/steamBoxPreperation?src=hash">#steamBoxPreperation</a> <a href="http://t.co/coB9hDOBr6">pic.twitter.com/coB9hDOBr6</a></p>&mdash; Matt Witherow (@MattJWitherow) <a href="https://twitter.com/MattJWitherow/status/417058478281084928">December 28, 2013</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -243,3 +258,5 @@ There is something really satisfying about buying and playing games from the cou
 [gpu]: http://www.tomshardware.com/reviews/geforce-gtx-770-gk104-review,3519-28.html
 [case]: http://www.fractal-design.com/home/product/cases/node-series/node-304-black
 [psu]: http://www.corsair.com/en/cs-series-modular-cs650m-650-watt-80-plus-gold-certified-psu
+
+[tvpost]: //
