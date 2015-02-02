@@ -72,56 +72,9 @@ h1 {
     vertical-align: middle;
 }
 
-.about-container{
- // position: relative;
- // min-height: 1px;
-  overflow-x:auto; 
-  overflow-y:hidden;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 45px;
-
-}
-
-.about-container:after{
-   clear:both;
-}
-
 p.about {
   font-size: 14px;
-}
-
-.left-pad {
-  padding-left: 10px;  
-}
-
-.right-pad {
-  padding-right: 10px;
-}
-
-.col {
-  float: left;
-}
-
-// Bootstrap-Like column fills.
-.col-6 {
-    width: 50%;
-}
-.col-5 {
-    width: 41.66666666666667%;
-}
-.col-4 {
-    width: 33.33333333333333%;
-}
-.col-3 {
-    width: 25%;
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-  display: block;
-  clear:both;
+  padding:   10px;
 }
 
 .centered {

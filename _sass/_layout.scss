@@ -21,7 +21,6 @@
     float: left;
     font-weight: bold;
     
-
     &,
     &:visited {
         color: $white;
@@ -55,6 +54,10 @@
         border-radius: 5px;
         text-align: right;
 
+        .page-link {
+            color: $brand-color;
+        }
+
         .menu-icon {
             display: block;
             float: right;
@@ -86,6 +89,7 @@
 
         .page-link {
             display: block;
+            text-color: $brand-color;
             padding: 5px 10px;
         }
     }
@@ -290,18 +294,6 @@ time {
  * About                                                                    *
 \****************************************************************************/
 
-.about-container {
-  overflow-x:auto; 
-  overflow-y:hidden;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 250% $spacing-unit;
-}
-
-.about-container:after{
-   clear:both;
-}
-
 p.about {
   font-size: 14px;
 }
@@ -325,40 +317,7 @@ p.about {
   padding-right: 50% $spacing-unit;
 }
 
-.col {
-  float: left;
-}
-
-// Bootstrap-Like column fills.
-.col-6 {
-    @extend .col;
-    width: 50%;
-}
-.col-5 {
-    @extend .col;
-    width: 41.66666666666667%;
-}
-.col-4 {
-    @extend .col;
-    width: 33.33333333333333%;
-}
-.col-3 {
-    @extend .col;
-    width: 25%;
-}
-
-.centered {
-    text-align: center;
-}
-
 .padded {
   margin-top: 50% $spacing-unit;  
   margin-bottom: 50% $spacing-unit;  
-}
-
-.row {
-  margin-right: -15px;
-  margin-left: -15px;
-  display: block;
-  clear:both;
 }
