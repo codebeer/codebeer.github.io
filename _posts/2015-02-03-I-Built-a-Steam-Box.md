@@ -15,7 +15,7 @@ excerpt: "Exactly a year ago I built a SteamBox PC because I didn't want to risk
 
 If you're thinking of moving your PC into the lounge room, my build experience could offer some hints. 
 
-+ Be **very careful** which TV you get to avoid lag or tearing, I wrote a [seperate post][tvpost] about it!
++ Be **very careful** which TV you get to avoid lag or tearing, I wrote a [separate post][tvpost] about it!
 + You will never beat factory built form factors.  
 + In the lounge setting, you may be more conscious of acoustics, get a good case to reduce noise.
 + My build was **millimeter perfect**. If I didn't get this exact PSU, it would NOT FIT.  
@@ -67,7 +67,7 @@ When Valve made the decision to open the conversation about their transition int
 
 As a developer working exclusively in agile environments, I'm all for customer input and frequent small iterations. I believe Valve were instrumental in this area when it came to customer marketplace interfaces - especially with the launch of Steam Greenlight - where potential customers vote on which indie games in their alpha stages should be completed and published to the store. 
 
-If you're interested in this sort of discussion, I recommend you listen to this early podcast from @Outware (are Apps a product or Service?) starring the very bright Lucia, who had recently completed a thesis surrounding the themes of the marketing processes in agile software development.  
+If you're interested in this sort of discussion, I recommend you listen to [this early podcast][podcast] from @Outware (are Apps a product or Service?) starring the very bright Lucia, who had recently completed a thesis surrounding the themes of the marketing processes in agile software development.  
 
 ## In Retrospect
 
@@ -259,4 +259,5 @@ There is something really satisfying about buying and playing games from the cou
 [case]: http://www.fractal-design.com/home/product/cases/node-series/node-304-black
 [psu]: http://www.corsair.com/en/cs-series-modular-cs650m-650-watt-80-plus-gold-certified-psu
 
-[tvpost]: //
+[tvpost]: {% post_url 2015-02-03-buying-tv-for-pc %}
+[podcast]: https://s3-ap-southeast-2.amazonaws.com/outwarepodcast/Season-1/Ep-v1-3/OMPodcastEpisode-v1-3.mp3

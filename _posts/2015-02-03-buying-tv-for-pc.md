@@ -118,7 +118,7 @@ Take note of the port interfaces, at this enthusiasts level - HDMI transport is 
 Check what the next thing is. 
 
 
-[steambox]: http:// 
+[steambox]: {% post_url 2015-02-03-I-Built-a-Steam-Box %}
 [lagtest]: http://www.hdtvtest.co.uk/news/input-lag
 [tvcnet]: http://www.cnet.com/products/sony-kdl-55w802a/
 [lbtest]: http://www.leobodnar.com/shop/index.php?main_page=product_info&products_id=212
