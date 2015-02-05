@@ -14,7 +14,8 @@ I escaped (again) to the country with a WiFi dongle to learn a new programming l
 (This list will be updated as I publish more posts)
 
 + **[What Are :Symbols?][1]**
-+ Syntactic Sugars - Where's the rest of it? 
++ **[Syntactic Sugars Part 1 - Shorthands & Conventions][2]** 
++ **[Syntactic Sugars Part 2 - Classes & Self][3]**
 + Procs & Lambdas
 + Ducktyping for Carpenters
 + Ruby Tidbits & Tricks
@@ -45,4 +46,6 @@ Or, you can tear through some of these.
 
 This is not Gospel. It's simply a spring-board to competency. Something to start with.
 
-[1]: {% post_url 2015-01-25-java-to-ruby-symbols %} 
+[1]: {% post_url 2015-01-25-java-to-ruby-symbols %}
+[2]: {% post_url 2015-02-04-Java-to-Ruby-Syntax %} 
+[3]: {% post_url 2015-02-05-Java-to-Ruby-Syntax-2 %}  
