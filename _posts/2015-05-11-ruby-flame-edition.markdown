@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Type Holy Wars (Flame On! Edition)"
+title: "Now That I'm On The Bandwagon (Ruby : Flame Edition)"
 author:
     name: "Matt Witherow"
     image: "matt.png"
     twitter: "MattJWitherow"
-excerpt: "Have static languages ruined me for life? Yeah, probably."
+excerpt: "Have Statically Typed languages ruined me for life? Yeah, probably."
 ---
 
 ## Taking the Boy out of the Java
@@ -16,7 +16,7 @@ as a core language to my toolbelt.
 My entire academic career and my two professional coding years have been spent
 using Statically Typed languages. Predominantly Java, Objective C and C89.
 
-In my short career, I had met a handful of characters who I admired or
+In my short time, I had met a handful of characters who I admired or
 who had in some way peaked my professional curiosity. The common attribute that
 tied these people together was their proficiency (read: love affair) with Ruby.
 
@@ -48,9 +48,9 @@ You need to make a clear distinction between these two things :
 
 There is a particular demographic of developer that have saturated the current Java
 community due to a number of environmental factors.
-Primarily, the historical use of Java in the corporate enterprise space.
+Primarily, the historical use of Java in the corporate enterprise space, and perhaps it's common role in modern* Tertiary Education.
 
-I know the programmer you're thinking of, I'm not them.
+I know the programmer you're thinking of, we're not all them.
 
 ---
 
@@ -80,7 +80,7 @@ Now at least have the damn key names for this Hash. Let's do this.
 ![rage][rage-gif-1]  
 
 The explicit text that came with Java was giving me useful information.
-I can't do any better than quote @Joneaves on this one. (and I paraphrase)
+I can't do any better than quote [@Joneaves][jeaves] on this one. (and I paraphrase)
 
 > If physically typing out each laborious character on your keyboard is the hardest part of programming for you,
 > you've got bigger fucking problems.
@@ -109,25 +109,27 @@ provide a certainty of behavior.
 
 It gave me a clear definition of responsibilities at the top of my files,
 it gave me unification, hell it gave me autocomplete  - but ultimately
-it made me *really think* about how I was modeling the world in my software.
+it made me *really think* about how I was modeling the world in my software.  
+
+Now I use `grep` and pen/paper to learn where things live in a codebase.
 
 ---
 
 ### I don't think you appreciate truly how beautiful it is Matt.
 
-Because Ruby is *just text* as I like to say, admittedly it is super easy to reach in
+Because Ruby is *just text* as I like to say (facetiously), admittedly it is super easy to reach in
 and start creating very readable code by creating your own DSLs.
 
 Unfortunately everyone seems to have picked up on this.
 
-It might be making your life easier, but as a new comer to the language, even just reading the
+It might be making the creator's life easier, but as a new comer to the language, even just reading the
 most simple codebases means having to read, learn and segregate several flipping DSLs in the one project.
-(Rspec, Rails etc etc). Not to mention that this seems to be a cultural problem when I find people **frequently**
+(Rspec, Rails, Rake, etc etc). Not to mention that this seems to be a cultural problem when I find people **frequently**
 not understanding the language they get paid to work with because they don't know where Ruby ends and the DSL begins.
 
 ![dsl][dsl]
 
-You've actually made my job of on-boarding more difficult.
+Ultimately, you've made my job of on-boarding more difficult.
 
 ---
 
@@ -139,16 +141,16 @@ The strong static typing coupled with a short-sighted app architecture
 can cripple a codebase's ability to change. Then you start hacking, then you
 realize your hacking your own hacks - and you question your career choice.
 
-Ruby wants to free you of these bindings. Ruby wants to be a pleasure to refactor.
+Ruby wants to free you of these bindings. Ruby wants to be a *pleasure* to refactor.
 
 Ruby's answer to this is Duck Typing.
 
 > If it looks like a Duck, and quacks like a Duck - It's a Duck.
 
-A senior engineer I work with has a fantastic affectionate term for this methodology.
+I have the pleasure of working with the spritely [Jay Dwyer][Jay Dwyer] who
+introduced me to a fantastic affectionate term for this methodology.
 
 > Duck Punching  
-> - Jay Dwyer
 
 Well, this class was a Duck - but now I guess it's also a horse,
 and an Authentication Delegate, and a Model Validator.
@@ -164,3 +166,6 @@ method signatures. Did you? No. Didn't think so.
 [rage-gif-1]: /images/posts/ruby/rage1.gif
 [rage-gif-2]: /images/posts/ruby/rage2.gif
 [dsl]: /images/posts/ruby/dsl.png
+
+[jeaves]: https://twitter.com/joneaves
+[jay]: https://twitter.com/joneaves
