@@ -147,7 +147,7 @@ Ruby's answer to this is Duck Typing.
 
 > If it looks like a Duck, and quacks like a Duck - It's a Duck.
 
-I have the pleasure of working with the spritely [Jay Dwyer][Jay Dwyer] who
+I have the pleasure of working with the spritely [Jay Dwyer][jay] who
 introduced me to a fantastic affectionate term for this methodology.
 
 > Duck Punching  
