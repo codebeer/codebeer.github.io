@@ -1,0 +1,122 @@
+---
+layout: post
+title: "DevOpsDays Melbourne 2015"
+author:
+    name: "Matt Witherow"
+    image: "matt.png"
+    twitter: "MattJWitherow"
+excerpt: "We're not in Kansas anymore Toto"
+---
+
+## Introduction
+
+This was my first DevOpsDays event, I had only recently started looking into the world of Ops.
+I was unsure how much I could get out of the two days, or what exactly I was getting into.
+
+DevOpsDays is a rapidly growing, worldwide, annual conference acutely focused on Developer Operations
+and Delivery Engineering. So what *is* DevOps? Nobody knows, not even the engineers supposedly
+belonging to this group can concisely explain what it is. The scope of the word has grown unwieldily.
+In fact, the crowd seem to hate the very use of the word.
+Everyone pauses and takes time to punctuate each mention of the phrase DevOps with a facetious
+"air-quotes" gesture.
+
+To explain DevOps simply, I favored this rationale:
+
+> If Developers build the app, Ops are those who run it.
+
+This encompasses a lot, and leaves many overlapping areas of responsibility between the two.
+However despite this muddled definition, the DevOps community see themselves as separate
+from traditional developers. It's often a confusing or unwarranted segregation for a new comer.
+
+There's no doubt though that the attendees on the ground share a strong camaraderie,
+and this is why the conference, with its unorthodox format work so damn well.
+
+---
+
+## The Melbourne Conference
+
+The format of the conference is different to most technical events I had been to in the past.
+Each day is started with 2-3 formal presentations including a keynote.
+This is followed by a similar number of Ignite Talks - these are designed to be short and sweet.
+The pace for Ignite talks is enforced by having the speakers' slides change every 15 seconds.
+Then any and all attendees are welcomed to the stage to pitch a topic of discussion for the
+afternoon's Open Sessions. Generally, a large number of topics are purposed - these are then
+stuck on a wall for others to vote on over the course of lunch. The most popular voted talks
+are designated rooms for everyone interested to gather and facilitate an informal chat around
+the topic. These are great for knowledge sharing, brainstorming and inevitably devolves into
+grandiose war stories. Three of these are run in parallel.
+
+Topics that did not warrant enough votes for a room but still have interested parties can form
+their own ad hoc group anyway - known affectionately as the Hallway Track.
+
+The days are peppered with breaks for meals and coffee, finished with pints at the pub.
+
+The first night ultimately closed at Melbourne's nearby Galactic Circus Arcade, which was a
+great opportunity to shoot some fellow engineers with lasers and watch resident Canadian - [Jared Hunter][jhunter] - play
+(and dominate) the national sport of his people, Air Hockey.
+
+![Introduction on Day 1][opening]  
+
+![The afternoon's Open Sessions time table][board]
+
+---
+
+## The DevOps Mystery
+
+REA Group's CIO [Nigel Dalton][ndalton] gave the opening keynote, and was acutely aware of his managerial presence in a room of engineers. To help occupy the attention of those uninterested in what he had to say - some of us at REA had created a treasure hunt that started with Nigel's hoodie and ended in secret tweet. Contestants had to play with Docker, find missing credentials in git logs, hit correct ports and clear other such hurdles. It ran perfectly, with the mystery being solved within seconds of Nigel finishing his talk. The winner scored some new headphones.
+
+The opening keynote for day two was done as a panel, another variant on the traditional conference format. The topics were not technical but again revolved around managing teams and defining technical responsibilities. [Mike Williams][mwilliams] represented REA.
+
+![REA CIO Nigel Dalton][nigel]  
+
+![Panel for Day 2 opening Keynote][panel]
+
+---
+
+## DevOps Culture
+
+As a young engineer, and somebody reasonably new to the world of Ops - DevOpsDays was great to get a feel for the landscape. To understand what motivates this sub-genre of engineering, how it got here and where it's going. People commonly wanted to talk about how to influence change within their organizations, or how to work well with other stakeholders. Talks tended to become philosophical rather than heavily technical or pragmatic - but this was the whim of the people.
+
+Popular discussions included "How do you handle the Pager?", "How do you share knowledge with others?", "How do you retrofit Ops into the traditional IT enterprise?"
+
+Most notably was a discussion from one guy who did a literal "Phoenix Deployment" when his data centre physically burnt down.
+
+![An Open Session discussion][opensesh]  
+
+![Voting on topics for Open Sessions Day 2][voting]
+
+---
+
+## Reflection (As a New Comer)
+
+The most value I got from the event was floating around and sparking up the same conversation with various people to get a feel for the discipline.
+
+My background is almost entirely in Mobile App development, a discipline I feel is somewhat insulated from the rest of the software world. In that space, non-trivial Ops never really entered into the equation. From this, I envisioned an Engineering Spectrum, with typical app development at one end and hardcore Ops at the other.
+
+As an App developer, I felt measured by my 'skill', my ability to execute change. A minute-by-minute ability to cut the code into lines that did Ninja stuff and put results on the glass. Then I simply pushed a button and shipped it to the world. If I wanted to get better at this, I just did it more. Application level design and programming was like going to the gym - go more, get better. However down the Ops end of the spectrum, I perceived the great DevOps Engineers around me not as having 'skill' per say - but Wisdom. The knowledge in knowing how a great number of subsystems formed together to form even larger black boxes I couldn't see inside. This lead me to pose the question during each conversation - is the idea of a Junior DevOp a misnomer? Can you teach this? Or, as one person put it to complement my gym analogy is it 'Scar Tissue', something that simply comes with a few years on the tools?
+
+Skill is something you perfect with use, like a craft. Skill is understanding, tilled from knowledge. Wisdom is experience, learnt from mistakes.
+
+As a relatively green engineer my knowledge is Swiss cheese. Filled with gaps. The current state of Australia's tertiary education sees my 90% test score and tells me I'm a certified genius. But my cheese is 10% gaps. If you knew 90% of everything to do with a bicycle, it's not hard to imagine that you know everything there is except how to turn left. To me, that's a pretty important part of riding a bike. These outcomes are collected and compounded over time, leaving me with a 'Swiss Cheese Understanding'.
+(I was a Head Tutor for some time at a Melbourne university and it has left me somewhat jaded about the state of education, so apologies.)
+I felt that the vital glue that was needed to fill the holes of my knowledge and solidify my understanding of software was indeed everything and anything remotely classified as Ops. It's hard to teach Ops in a university environment, or to learn working as a Mobile Developer, because you don't really have the problem space to solve anything in. You have tiny isolated boxes to live in. Now that I'm in an environment ripe with Ops tasks to do, is it a matter of exposure?
+
+It remains an open question, the best way to make a DevOp out of me. Some more pragmatic suggestions or lessons that have come out of conversations at the conference include
+
++ On-boarding with a fake pager. Whoever is actually on Pager Duty has the contact number of the new guy, they can be contacted whenever the Engineer in charge dictates the learning opportunity is appropriate - or that they could let their fake-pager-buddy solve it.
++ Keep a Github repo project as a Ops Practices Bible. This document keeps best practices, recipes, rationales, conventions and instructions on Operational concerns that transcends any one technology. Keeping on GH with Pull Requests for edits lets all developers see and debate changes. This obvisouly brings it's own logistical overheads.
++ Change is not equal to progress. The hardest part of the transition from traditional developement to operations is changing the mindset that change is equal to progress. I'm in this transition right now, and feel that frustration. You will spend a long time cultivating your knowledge without many opportunities to execute it.
++ I've learnt that I'm spoilt for tech at REA. I realized so many large companies in Australia are still delicately petting their servers individually and SSHing into machines to run enormous bash scripts. I, on the other hand, yesterday made an AWS Lambda to trigger a ELB phoenix deployment from a docker container ect etc.
+
+In closing, I was pleasantly surprised by the strength of the DevOps community, and enjoyed the efforts from the organizers to step away from traditional conference model. I would recommend DevOpsDays worldwide for those making the transition into Ops or younger engineers wanting to get a feel for the work. I didn't necessarily walk away with new stacks or patterns to implement on my next project - but I learnt a lot about the state of the DevOps world and the people that inhabit it. I have a better idea about how I can move forward into this space, and help shape the Ops back at REA.
+
+[opening]: /images/posts/devopsdays/opening.jpg
+[board]: /images/posts/devopsdays/board.jpg
+[voting]: /images/posts/devopsdays/voting.jpg
+[nigel]: /images/posts/devopsdays/nigel.jpg
+[panel]: /images/posts/devopsdays/panel.jpg
+[opensesh]: /images/posts/devopsdays/opensesh.jpg
+
+[jhunter]: https://twitter.com/hunter_jared
+[ndalton]: https://twitter.com/nxdnz
+[mwilliams]: https://twitter.com/woollyams
